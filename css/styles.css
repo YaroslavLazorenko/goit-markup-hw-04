@@ -114,6 +114,44 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+}
+
+.social-links-light-theme {
+  color: #afb1b8;
+}
+
+.social-links-dark-theme {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-white-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  color: var(--primary-white-color);
+  background-color: #2196f3;
+}
+
+.social-list-icon {
+  fill: currentColor;
+}
 /* ============= END OF COMPONENTS ============= */
 
 /* ============= HEADER ============= */
@@ -328,37 +366,40 @@ body {
   text-align: center;
   color: var(--secondary-text-color);
 }
+/* ============= END OF TEAM ============= */
 
-.social-list {
+/* ============= CLIENTS ============= */
+.clients-list {
   display: flex;
   justify-content: center;
 }
 
-.social-list-item:not(:last-child) {
-  margin-right: 10px;
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.social-list-link {
+.clients-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 170px;
+  height: 92px;
 
   color: #afb1b8;
-  border-radius: 50%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
-  color: var(--primary-white-color);
-  background-color: #2196f3;
+.clients-list-link:hover,
+.clients-list-link:focus {
+  color: #2196f3;
+  border: 1px solid #2196f3;
 }
 
-.social-list-icon {
+.clients-list-icon {
   fill: currentColor;
 }
-/* ============= END OF TEAM ============= */
+/* ============= END OF CLIENTS ============= */
 
 /* ============= WORKS ============= */
 .works-filter-btn-list {
@@ -440,6 +481,15 @@ body {
   background-color: #2f303a;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.address-container {
+  margin-right: 70px;
+}
+
 .footer-logo {
   margin-bottom: 20px;
 }
@@ -466,5 +516,15 @@ body {
 .address-mail-link,
 .address-tel-link {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.social-links-caption {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
 }
 /* ============= END OF FOOTER ============= */ ;
